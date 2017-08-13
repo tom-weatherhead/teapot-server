@@ -27,7 +27,6 @@
     "babel-cli": "latest",
     "babel-preset-env": "latest",
     "chai": "latest",
-    "chai-files": "latest",
     "chai-http": "latest",
     "grunt": "latest",
     "grunt-cli": "latest",

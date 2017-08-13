@@ -13,7 +13,7 @@ chai.use(chaiHttp);
 const expect = chai.expect;
 
 describe('app', function () {
-	describe('/get', function () {
+	describe('GET /', function () {
 		it('responds with status 200', function (done) {
 			chai.request(app)
 				.get('/')
@@ -26,7 +26,7 @@ describe('app', function () {
 		});
 	});
 
-	describe('/get notfound', function () {
+	describe('GET /notfound', function () {
 		it('responds with status 404', function (done) {
 			chai.request(app)
 				.get('/notfound')
@@ -39,7 +39,7 @@ describe('app', function () {
 		});
 	});
 
-	describe('/get servererror', function () {
+	describe('GET /servererror', function () {
 		it('responds with status 500', function (done) {
 			chai.request(app)
 				.get('/servererror')
@@ -52,7 +52,7 @@ describe('app', function () {
 		});
 	});
 
-	describe('/get teapot', function () {
+	describe('GET /teapot', function () {
 		it('responds with status 418', function (done) {
 			chai.request(app)
 				.get('/teapot')
