@@ -34,7 +34,7 @@ const app = express();
 
 // **** Cross-Origin Resource Sharing: End ****
 
-app.use(express.static('public'));
+// app.use(express.static('public'));
 
 // **** Request Event Handlers: Begin ****
 
@@ -74,6 +74,10 @@ app.get('/teapot', function (req, res) {
 	// res.sendStatus(418);
 	// Or res.status(418).send('The teapot is responding to the request to brew coffee...');
 	res.status(418).sendFile(path.join(__dirname, 'teapot.html'));
+});
+
+app.get('/images/teapot.jpg', function (req, res) {
+	res.sendFile(path.join(__dirname, 'public', 'images', 'teapot.jpg'));
 });
 
 // app.get('/jquery.slim.min.js', function (req, res) {
