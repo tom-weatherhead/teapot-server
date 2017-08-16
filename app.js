@@ -34,7 +34,7 @@ const app = express();
 
 // **** Cross-Origin Resource Sharing: End ****
 
-// app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // **** Request Event Handlers: Begin ****
 
@@ -76,9 +76,9 @@ app.get('/teapot', function (req, res) {
 	res.status(418).sendFile(path.join(__dirname, 'teapot.html'));
 });
 
-app.get('/images/teapot.jpg', function (req, res) {
-	res.sendFile(path.join(__dirname, 'public', 'images', 'teapot.jpg'));
-});
+// app.get('/images/teapot.jpg', function (req, res) {
+//	res.sendFile(path.join(__dirname, 'public', 'images', 'teapot.jpg'));
+// });
 
 // app.get('/jquery.slim.min.js', function (req, res) {
 //	res.redirect('https://code.jquery.com/jquery-3.2.1.slim.min.js');
