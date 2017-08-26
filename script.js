@@ -7,6 +7,5 @@
 
 $('#btnClickMe').click(function () {		// eslint-disable-line no-undef
 	console.log('#btnClickMe click');
-	// alert('Thanks.');						// eslint-disable-line no-alert
 	window.location.href = '/teapot';
 });

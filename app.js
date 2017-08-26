@@ -3,6 +3,10 @@
 // An HTTP teapot server.
 // Tom Weatherhead - August 12, 2017
 
+// npm install --save express nodemon
+
+// npm install --save-dev babel-cli babel-preset-env chai chai-http grunt grunt-cli grunt-contrib-watch grunt-eslint grunt-mocha-test grunt-nsp mocha
+
 // require('rootpath')();
 const express = require('express');
 const path = require('path');

@@ -4,7 +4,8 @@
 // Tom Weatherhead - August 12, 2017
 
 // require('rootpath')();
-const app = require('./app');
+// const app = require('./app');
+const app = require('.');
 
 const config = require('./config');			// I.e. ./config.json
 
