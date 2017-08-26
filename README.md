@@ -13,13 +13,13 @@ Note: The command "grunt" runs lint, unit tests, and security tests.
 
 npm Installation Instructions:
 
-	$ npm install [--save] thaw-tic-tac-toe-engine
+	$ npm install [--save] teapot-server
 
 To test the sample driver (server.js) of the Web server component (app.js) :
 
 	$ npm start
 
-Then browse to http://localhost:3000/ to access the main page.
+Then browse to http://localhost:3000 to access the main page.
 
 An HTTP GET of http://localhost:3000/teapot will receive a response with HTTP status code 418: I'm a teapot.
 
