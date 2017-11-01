@@ -1,4 +1,7 @@
 # teapot-server
+
+[![build status](https://secure.travis-ci.org/tom-weatherhead/teapot-server.svg)](http://travis-ci.org/tom-weatherhead/teapot-server)  [![downloads](https://img.shields.io/npm/dt/teapot-server.svg)](https://www.npmjs.com/package/teapot-server)
+
 An HTTP teapot server
 
 Git installation instructions:
